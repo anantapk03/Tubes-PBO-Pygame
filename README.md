@@ -19,4 +19,13 @@ CEPRI DAMIRI (2105036) - D4 RPL 1B
 ```
 
 ## Pre - Production Game
+```
+#### Game Design Document
 
+1. High Concept
+2. Unique Value
+3. Genre
+4. Target Audience
+5. Story
+6. Gameplay
+```
