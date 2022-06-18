@@ -21,8 +21,11 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Tubes Game")
 clock = pygame.time.Clock()
 
+score = 0
+
 # load asset files
 asset = path.join(path.dirname(__file__), 'img')
+sound = path.join(path.dirname(__file__), 'snd')
 
 # ambil gambar
 background = pygame.image.load(path.join(asset, "starfield.png")).convert()
@@ -33,6 +36,14 @@ meteor_img = []
 meteor_list = ['meteorBrown_big1.png', 'meteorBrown_med1.png', 'meteorBrown_small1.png']
 for img in meteor_list:
     meteor_img.append(pygame.image.load(path.join(asset, img)).convert())
+
+# ledakan sound
+ledakan_sound = []
+for snd in ["expl3.wav", "expl6.wav"]:
+    ledakan_sound.append(pygame.mixer.Sound(path.join(sound, snd)))
+pygame.mixer.music.load(path.join(sound, "tgfcoder-FrozenJam-SeamlessLoop.ogg"))
+pygame.mixer.music.set_volume(0.8)
+
 
 # ledakan
 ledakan_anim = {}
