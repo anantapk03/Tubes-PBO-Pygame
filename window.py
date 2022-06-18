@@ -20,6 +20,7 @@ asset = path.join(path.dirname(__file__), 'img')
 # ambil gambar
 background = pygame.image.load(path.join(asset, "starfield.png"))
 background_rect = background.get_rect()
+peluru_img = pygame.image.load(path.join(asset, "laserRed16.png"))
 
 #inisiasi pygame dan buat window
 pygame.init()
@@ -29,6 +30,7 @@ pygame.display.set_caption("Tubes Game")
 clock = pygame.time.Clock()
 
 all_sprites = pygame.sprite.Group()
+peluru = pygame.sprite.Group()
 
 
 # Game loop
