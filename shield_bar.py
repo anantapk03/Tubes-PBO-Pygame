@@ -2,8 +2,7 @@ import pygame
 from window import *
 
 
-class ShieldBar:
-    
+class ShieldBar:    
     def gambar_shield(surf, x, y, pct):
         if pct < 0:
             pct = 0
