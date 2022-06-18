@@ -36,6 +36,10 @@ meteor_img = []
 meteor_list = ['meteorBrown_big1.png', 'meteorBrown_med1.png', 'meteorBrown_small1.png']
 for img in meteor_list:
     meteor_img.append(pygame.image.load(path.join(asset, img)).convert())
+player_mini_img = pygame.transform.scale(player_img, (30, 20))
+player_mini_img.set_colorkey(BLACK)
+
+
 
 # ledakan sound
 ledakan_sound = []

@@ -5,6 +5,7 @@ from meteor import Meteor
 from menu import *
 import random
 from ledakan import Ledakan
+from nyawa import *
 
 Menu.show_go_screen()
 
@@ -66,6 +67,7 @@ while running:
     screen.blit(background, background_rect)
     all_sprites.draw(screen)
     draw_text(screen, str(score), 18, WIDTH / 2, 10)
+    Nyawa.gambar_nyawa(screen, WIDTH - 100, 5, player.lives, player_mini_img)
     
     # *after* drawing everything, flip the display
     pygame.display.flip()
