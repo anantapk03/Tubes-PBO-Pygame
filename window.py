@@ -19,6 +19,7 @@ asset = path.join(path.dirname(__file__), 'img')
 # ambil gambar
 background = pygame.image.load(path.join(asset, "starfield.png"))
 background_rect = background.get_rect()
+peluru_img = pygame.image.load(path.join(asset, "laserRed16.png"))
 
 #inisiasi pygame dan buat window
 pygame.init()
