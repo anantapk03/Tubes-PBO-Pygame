@@ -1,8 +1,13 @@
 import pygame 
+<<<<<<< HEAD
 from window import * 
 from peluru import * 
 
 player_img = pygame.image.load(path.join(asset, "playerShip1_orange.png")) 
+=======
+import window 
+from peluru import *
+>>>>>>> 042e5e6da5f9bd4d142c0cf138a1cef43d441944
 
 class Player(pygame.sprite.Sprite):
     
@@ -50,8 +55,13 @@ class Player(pygame.sprite.Sprite):
         if now - self.last_shoot > self.shoot_delay:
             self.last_shoot = now
             peluru = Peluru(self.rect.centerx, self.rect.top)
+<<<<<<< HEAD
             all_sprites.add(peluru)
             peluru.add(peluru)
+=======
+            window.all_sprites.add(peluru)
+            bullet.add(peluru)
+>>>>>>> 042e5e6da5f9bd4d142c0cf138a1cef43d441944
     
 
     def hide(self):
