@@ -76,5 +76,28 @@ CEPRI DAMIRI (2105036) - D4 RPL 1B
 ```
 
 ## Production Game 
-### Analisis Class Diagram yang Dibutuhkan 
+### Analisis Class Diagram yang Dibutuhkan
+
+![ClassDiagram_Game](https://raw.githubusercontent.com/anantapk03/Tubes-PBO-Pygame/main/ClassDiagram_Game.png "Gambar Class Diagram Game")
+
+```
+1. Kelas Menu nantinya akan bertugas menampilkan tampilan awal dan menampilkan tampilan ketika player kehabisan 
+   nyawa. Maka dari itu kelas Menu akan menyimpan informasi dari kelas Nyawa. 
+
+2. Kelas Nyawa akan memiliki tugas menampilkan dan mengkalkulasi nyawa dari player. kelas ini akan menyimpan informasi 
+   dari kelas ShieldBar yang mana nantinya akan ada tiga kesempatan nyawa dan setiap nyawa memiliki shield bar yang 
+   full jika player tidak mengalami tabrakan dengan Meteor. 
+
+3. Kelas Shield Bar nantinya akan meyimpan informasi dari player yang memiliki hubungan asosiasi dengan kelas Meteor. 
+   Satu-satunya penentu mengapa shield bar berkurang adalah ketika objek Player dan Meteor bertabrakan sehingg player 
+   nantinya akan meledak. 
+
+4. Kelas Player pada kelas ini akan memiliki tugas seperti player yang bisa bergerak ke kanan dan ke kiri, lalu menembak 
+   yang mana hal tersebut bisa terjadi karena kelas ini menyimpan informasi dari kelas Peluru. nantinya tembakan akan ditujukan 
+   oleh meteor yang mana ketika peluru dan meteor berbenturan maka akan terjadi ledakan yang mengakibatkan score yang dimiliki player 
+   bertambah. kelas ini juga memiliki hubungan dengan 
+
+5. 
+```
+
 ### Asset Game 
