@@ -1,6 +1,6 @@
 import pygame 
 import window 
-from peluru import Peluru 
+from peluru import *
 
 class Player(pygame.sprite.Sprite):
     
@@ -49,7 +49,7 @@ class Player(pygame.sprite.Sprite):
             self.last_shoot = now
             peluru = Peluru(self.rect.centerx, self.rect.top)
             window.all_sprites.add(peluru)
-            peluru.add(peluru)
+            bullet.add(peluru)
     
 
     def hide(self):
