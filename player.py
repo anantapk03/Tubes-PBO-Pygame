@@ -1,15 +1,12 @@
 import pygame 
-from os import path
 import window 
-
-
-player_img = pygame.image.load(path.join(window.asset, "playerShip1_orange.png")) 
+from peluru import Peluru 
 
 class Player(pygame.sprite.Sprite):
     
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.transform.scale(player_img, (50, 38))
+        self.image = pygame.transform.scale(window.player_img, (50, 38))
         self.image.set_colorkey(window.BLACK)
         self.rect = self.image.get_rect()
         self.radius = 25
@@ -45,22 +42,21 @@ class Player(pygame.sprite.Sprite):
             self.rect.right = window.WIDTH
         if self.rect.left < 0:
             self.rect.left = 0
-            
+    
     def tembak(self):
         now = pygame.time.get_ticks()
         if now - self.last_shoot > self.shoot_delay:
             self.last_shoot = now
             peluru = Peluru(self.rect.centerx, self.rect.top)
-            all_sprites.add(peluru)
-            pelor.add(peluru)
-            shoot_sound.play() 
+            window.all_sprites.add(peluru)
+            peluru.add(peluru)
+    
 
     def hide(self):
         # hilang/sembunyikan sementara
         self.hidden = True
         self.hide_timer = pygame.time.get_ticks()
         self.rect.center = (window.WIDTH/ 2, window.HEIGHT + 200)
-        
-all_sprites = pygame.sprite.Group()
-player = Player () 
+
+
 
