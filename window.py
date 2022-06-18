@@ -21,7 +21,7 @@ asset = path.join(path.dirname(__file__), 'img')
 background = pygame.image.load(path.join(asset, "starfield.png"))
 background_rect = background.get_rect()
 peluru_img = pygame.image.load(path.join(asset, "laserRed16.png"))
-player_img = pygame.image.load(path.join(asset, "playerShip1_orange.png")) 
+
 
 #inisiasi pygame dan buat window
 pygame.init()
@@ -32,6 +32,7 @@ clock = pygame.time.Clock()
 
 all_sprites = pygame.sprite.Group()
 peluru = pygame.sprite.Group()
+
 
 
 # Game loop
