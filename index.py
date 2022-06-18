@@ -6,6 +6,7 @@ from menu import *
 import random
 from ledakan import Ledakan
 from nyawa import *
+from shield_bar import *
 
 Menu.show_go_screen()
 
@@ -74,6 +75,7 @@ while running:
     all_sprites.draw(screen)
     draw_text(screen, str(score), 18, WIDTH / 2, 10)
     Nyawa.gambar_nyawa(screen, WIDTH - 100, 5, player.lives, player_mini_img)
+    ShieldBar.gambar_shield(screen, 5, 5, player.shield)
     
     # *after* drawing everything, flip the display
     pygame.display.flip()
