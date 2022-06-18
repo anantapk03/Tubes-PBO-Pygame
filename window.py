@@ -45,9 +45,10 @@ player_mini_img.set_colorkey(BLACK)
 ledakan_sound = []
 for snd in ["expl3.wav", "expl6.wav"]:
     ledakan_sound.append(pygame.mixer.Sound(path.join(sound, snd)))
-pygame.mixer.music.load(path.join(sound, "tgfcoder-FrozenJam-SeamlessLoop.ogg"))
+pygame.mixer.music.load(path.join(sound, "song.mp3"))
 pygame.mixer.music.set_volume(0.8)
 
+pygame.mixer.music.play(loops = -1)
 
 # ledakan
 ledakan_anim = {}

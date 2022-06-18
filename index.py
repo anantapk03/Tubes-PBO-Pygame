@@ -61,6 +61,11 @@ while running:
             player.hide()
             player.lives -= 1
             player.shield = 100
+            
+        # jika nyawa player abis 
+        if player.lives < 1 and death_explosion.alive():
+            running = False
+            
 
     # Draw / render
     screen.fill(BLACK)
