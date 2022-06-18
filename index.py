@@ -2,6 +2,9 @@ import pygame
 from player import Player
 from window import *
 from meteor import Meteor
+from menu import *
+
+Menu.show_go_screen()
 
 player = Player()
 all_sprites.add(player)
@@ -31,6 +34,7 @@ while running:
     screen.fill(BLACK)
     screen.blit(background, background_rect)
     all_sprites.draw(screen)
+    
     # *after* drawing everything, flip the display
     pygame.display.flip()
 

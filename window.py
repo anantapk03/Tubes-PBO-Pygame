@@ -14,18 +14,6 @@ WIDTH  = 360
 HEIGHT = 480
 FPS = 60
 
-<<<<<<< HEAD
-# load asset files
-asset = path.join(path.dirname(__file__), 'img')
-
-# ambil gambar
-background = pygame.image.load(path.join(asset, "starfield.png"))
-background_rect = background.get_rect()
-peluru_img = pygame.image.load(path.join(asset, "laserRed16.png"))
-
-
-=======
->>>>>>> 042e5e6da5f9bd4d142c0cf138a1cef43d441944
 #inisiasi pygame dan buat window
 pygame.init()
 pygame.mixer.init()
@@ -51,29 +39,3 @@ bullet = pygame.sprite.Group()
 meteor = pygame.sprite.Group()
 
 
-<<<<<<< HEAD
-
-# Game loop
-running = True
-while running:
-    # keep loop running at the right speed
-    clock.tick(FPS)
-    # Process input (events)
-    for event in pygame.event.get():
-        # check for closing window
-        if event.type == pygame.QUIT:
-            running = False
-            
-# Update
-    all_sprites.update()
-
-    # Draw / render
-    screen.fill(BLACK)
-    screen.blit(background, background_rect)
-    all_sprites.draw(screen)
-    # *after* drawing everything, flip the display
-    pygame.display.flip()
-
-pygame.quit()
-=======
->>>>>>> 042e5e6da5f9bd4d142c0cf138a1cef43d441944
