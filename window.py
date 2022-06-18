@@ -33,7 +33,26 @@ meteor_img = []
 meteor_list = ['meteorBrown_big1.png', 'meteorBrown_med1.png', 'meteorBrown_small1.png']
 for img in meteor_list:
     meteor_img.append(pygame.image.load(path.join(asset, img)).convert())
+
+# ledakan
+ledakan_anim = {}
+ledakan_anim['gede'] = []
+ledakan_anim['kecil'] = []
+ledakan_anim['player'] = []
+for i in range(9):
+    filename = 'regularExplosion0{}.png'.format(i)
+    img = pygame.image.load(path.join(asset, filename)).convert()
+    img.set_colorkey(BLACK)
+    img_gede = pygame.transform.scale(img, (75, 75))
+    ledakan_anim['gede'].append(img_gede)
+    img_kecil = pygame.transform.scale(img, (32, 32))
+    ledakan_anim['kecil'].append(img_kecil)
+    filename = 'sonicExplosion0{}.png'.format(i)
+    img = pygame.image.load(path.join(asset, filename)).convert()
+    img.set_colorkey(BLACK)
+    ledakan_anim['player'].append(img)
     
+
 all_sprites = pygame.sprite.Group()
 bullet = pygame.sprite.Group()
 meteor = pygame.sprite.Group()
