@@ -29,6 +29,7 @@ pygame.display.set_caption("Tubes Game")
 clock = pygame.time.Clock()
 
 all_sprites = pygame.sprite.Group()
+peluru = pygame.sprite.Group()
 
 # Game loop
 running = True
