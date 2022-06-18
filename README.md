@@ -74,3 +74,7 @@ CEPRI DAMIRI (2105036) - D4 RPL 1B
  player perlu mengatur keterampilan menghindar dan kemampuan 
  menembak secara tepat agar meteorit tidak mengenai space ship yang ia kendalikan serta tidak merusak galaksi.
 ```
+
+## Production Game 
+### Analisis Class Diagram yang Dibutuhkan 
+### Asset Game 
