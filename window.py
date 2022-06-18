@@ -1,6 +1,7 @@
 import pygame
 from os import path
 
+
 #buat warna bg
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -28,6 +29,7 @@ pygame.display.set_caption("Tubes Game")
 clock = pygame.time.Clock()
 
 all_sprites = pygame.sprite.Group()
+
 
 # Game loop
 running = True
