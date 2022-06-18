@@ -14,6 +14,7 @@ WIDTH  = 360
 HEIGHT = 480
 FPS = 60
 
+
 #inisiasi pygame dan buat window
 pygame.init()
 pygame.mixer.init()
@@ -38,6 +39,7 @@ for img in meteor_list:
     meteor_img.append(pygame.image.load(path.join(asset, img)).convert())
 player_mini_img = pygame.transform.scale(player_img, (30, 20))
 player_mini_img.set_colorkey(BLACK)
+game_over_img = pygame.image.load(path.join(asset, "playerShip1_orange.png")).convert()
 
 
 

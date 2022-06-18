@@ -25,3 +25,17 @@ class Menu():
                     pygame.quit()
                 if event.type == pygame.KEYUP:
                     waiting = False
+                    
+    def show_gameover_screen(score):
+        screen.blit(background, background_rect)
+        draw_text(screen, "GAME OVER", 64, WIDTH / 2, HEIGHT / 4)
+        draw_text(screen, "Score anda {}".format(score), 45, WIDTH / 2, HEIGHT / 2)
+        pygame.display.flip()
+        waiting = True
+        while waiting:
+            clock.tick(FPS)
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                if event.type == pygame.KEYUP:
+                    waiting = False

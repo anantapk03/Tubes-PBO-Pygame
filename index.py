@@ -64,6 +64,7 @@ while running:
             
         # jika nyawa player abis 
         if player.lives < 1 and death_explosion.alive():
+            Menu.show_gameover_screen(score)
             running = False
             
 
