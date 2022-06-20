@@ -97,12 +97,21 @@ CEPRI DAMIRI (2105036) - D4 RPL 1B
    oleh meteor yang mana ketika peluru dan meteor berbenturan maka akan terjadi ledakan yang mengakibatkan score yang dimiliki player 
    bertambah.
 
-5. Kelas Meteor merupakan musuh dari Player. Meteor dapat meledak karena menerima peluru yang ditembakan oleh Player. Kelas ini juga
-   menyimpan informasi dari player. Player dan Meteor ketika bertabrakan maka akan terjadi ledakan sehingga dua kelas tersebut memiliki 
-   hubungan composition dengan kelas Ledakan. 
+5. Kelas Meteor merupakan musuh dari Player. Meteor dapat meledak karena menerima peluru yang ditembakan oleh Player. 
+   Kelas ini juga menyimpan informasi dari player. Player dan Meteor ketika bertabrakan maka akan terjadi ledakan sehingga 
+   dua kelas tersebut memiliki hubungan composition dengan kelas Ledakan. 
    
-6. 
+6. Kelas Ledakan akan memiliki hubungan dengan kelas meteor dan Player yaitu hubungan Composition. Karena kelas Player dan Meteor yang 
+   dapat memungkinkan terjadinya ledakan. Player dapat membuat Meteor meledak karena player menyimpan peluru. sedangkan Player dapat meledak 
+   karena terjadinya tabrakan antara Meteor dan Player. 
+
+7. Kelas Peluru memiliki hubungan Agregation dengan kelas Player. Player akan menyimpan informasi dari kelas Peluru yang mana nantinya Peluru
+   dapat digunakan oleh Player. 
    
 ```
 
 ### Asset Game 
+
+```
+1. 
+```
