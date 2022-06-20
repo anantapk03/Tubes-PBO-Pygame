@@ -101,17 +101,46 @@ CEPRI DAMIRI (2105036) - D4 RPL 1B
    Kelas ini juga menyimpan informasi dari player. Player dan Meteor ketika bertabrakan maka akan terjadi ledakan sehingga 
    dua kelas tersebut memiliki hubungan composition dengan kelas Ledakan. 
    
-6. Kelas Ledakan akan memiliki hubungan dengan kelas meteor dan Player yaitu hubungan Composition. Karena kelas Player dan Meteor yang 
-   dapat memungkinkan terjadinya ledakan. Player dapat membuat Meteor meledak karena player menyimpan peluru. sedangkan Player dapat meledak 
-   karena terjadinya tabrakan antara Meteor dan Player. 
+6. Kelas Ledakan akan memiliki hubungan dengan kelas meteor dan Player yaitu hubungan Composition. Karena kelas 
+   Player dan Meteor yang dapat memungkinkan terjadinya ledakan. Player dapat membuat Meteor meledak karena player 
+   menyimpan peluru. sedangkan Player dapat meledak karena terjadinya tabrakan antara Meteor dan Player. 
 
-7. Kelas Peluru memiliki hubungan Agregation dengan kelas Player. Player akan menyimpan informasi dari kelas Peluru yang mana nantinya Peluru
-   dapat digunakan oleh Player. 
+7. Kelas Peluru memiliki hubungan Agregation dengan kelas Player. Player akan menyimpan informasi dari kelas 
+   Peluru yang mana nantinya Peluru dapat digunakan oleh Player. 
    
 ```
 
-### Asset Game 
+### Tampilan Game dan Asset 
+```
+1. Tampilan Awal Game
+```
+![tampilan_awalGame](https://github.com/anantapk03/Tubes-PBO-Pygame/blob/main/tampilan_awalGame.png "Gambar tampilan awal game sebelum dimulai")
 
 ```
-1. 
+Tampilan awal akan menampilkan judul dari game dan mengarahkan pengguna untuk menekan tombol apa saja agar 
+game dapat dimulai. 
 ```
+
+```
+2. Tampilan game saat dimulai
+```
+![game_dimulai](https://github.com/anantapk03/Tubes-PBO-Pygame/blob/main/game_dimulai.png "Gambar tampilan game ketika sudah dimulai")
+
+
+```
+Tampilan diatas akan menampilkan player, meteor, nyawa player, shield bar, laser / peluru yang dimiliki oleh player 
+dan ledakan jika peluru mengenai meteor atau Player dan Meteor bertabrakan. 
+```
+
+```
+3. Tampilan Game Over
+```
+![game_over](https://github.com/anantapk03/Tubes-PBO-Pygame/blob/main/game_over.png "Tampilan game over")
+
+```
+Ketika nyawa player habis maka layar akan menampilkan gambar diatas yang nantinya akan menampilkan score 
+yang diraih oleh pengguna saat bermain tadi. 
+```
+
+
+
